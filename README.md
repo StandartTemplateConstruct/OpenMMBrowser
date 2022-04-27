@@ -20,6 +20,7 @@ Got builtin HTTP server/React native web interface for control of navigation, ta
 
 Receives keyboard/mouse input via web socket interface
 
+A hot key for sending a tab to another device
 
 ## iOS app
 
