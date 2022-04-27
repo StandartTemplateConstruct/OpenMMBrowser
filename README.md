@@ -109,6 +109,11 @@ Shows all objects, whose fully qualified Semantic
    - Landscape
    - Building
 
+#AR view 
+
+## HumanROS component
+
+## on screen keyboard for recognized connected screens without touchscreen 
 
 # Architecture
 
