@@ -14,7 +14,13 @@ A keyboard controlled multitab browser that overlays OpenMMLab model processing 
 
 
 
-# Architectures
+# ...
+
+# STAROS application
+
+Got builtin HTTP server for control of navigation, tab switching, audio selection
+
+Receives keyboard/mouse input via web socket interface
 
 
 ## iOS app
