@@ -23,8 +23,12 @@ A keyboard controlled multitab browser that overlays OpenMMLab model processing 
  - CoreML models - exported by MMDeploy to ONNX Runtime
  - On device labeling generates a request to upload a screenshot of page to the learning service server
 
+# new reqs 
 
-view
+ - streams out tabs as rtmp
+ - able to show the overlayed labels from remote server
+
+# old stuff 
 
 ## UI
 
