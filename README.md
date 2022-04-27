@@ -22,6 +22,10 @@ Receives keyboard/mouse input via web socket interface
 
 A hot key for sending a tab to another device
 
+
+# ROS node 
+
+Has built in ROS node: camera, gps movement, actuators and camera for browser navigation 
 ## iOS app
 
  - SwiftUI interface
