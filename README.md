@@ -14,11 +14,9 @@ A keyboard controlled multitab browser that overlays OpenMMLab model processing 
 
 
 
-# ...
+# multi device browser
 
-# STAROS application
-
-Got builtin HTTP server for control of navigation, tab switching, audio selection
+Got builtin HTTP server/React native web interface for control of navigation, tab switching, audio selection
 
 Receives keyboard/mouse input via web socket interface
 
