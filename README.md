@@ -22,3 +22,91 @@ A keyboard controlled multitab browser that overlays OpenMMLab model processing 
  - SwiftUI interface
  - CoreML models - exported by MMDeploy to ONNX Runtime
  - On device labeling generates a request to upload a screenshot of page to the learning service server
+
+
+view
+
+## UI
+
+### Tab views
+
+ - *hotkey*: `1`..`9`,`0`
+
+ - Shows a webpage
+ - Has address bar
+   - If search term is entered, google search is performed
+ - button to enter **Labeling view**
+ - any object that is labeled by user and recognized is highlighted. It can be interacted with **Labeled object popup**
+
+#### Labeling view
+ 
+ - Allows to label an underlying webpage in a modal overlay
+    - Boxes
+    - Automatic segmentation
+    - Semantic autolabeling
+      -   People
+      -   Vehicles
+      -   Hands
+      -   People skeletons
+      -   Objects recognizable by image nets
+      -   UI elements
+
+
+#### Labeled object
+
+ - *checkbox* Show object on composite view
+ - *textfield* Fully qualified a **Semantic Path** label for the object
+
+### Composite view
+
+ - *hotkey*: `~`
+ 
+Shows all objects, whose fully qualified Semantic
+
+
+# Semantic Label
+
+## Semantic Label Context
+
+ - url
+   - url features 
+ - title
+   - title features
+ - webpage features
+
+## Semantic Label Class Tree
+
+ - UI
+   - Video Player
+   - Button
+   - Text Field
+   - Text
+ - Real World Object
+   - Humanoid
+     - Human
+     - Bot   
+   - Vehicle
+     - Truck
+     - Tank
+     - Car
+     - Train
+     - Boat
+     - Airplane
+   - Item
+   - Landscape
+   - Building
+
+
+# Architecture
+
+SwiftUI app that streams the contents of its WebViews to the Python server over RTMP
+
+Python server runs several models on the video, serves results to the subscribers over MixtreamProtocol
+
+## MixtreamProtocol
+
+# Datasets
+
+ - https://paperswithcode.com/dataset/howto100m
+ - https://github.com/open-mmlab/mmaction2
+
