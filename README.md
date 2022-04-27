@@ -11,3 +11,14 @@ A keyboard controlled multitab browser that overlays OpenMMLab model processing 
  - https://github.com/open-mmlab/mmocr
  - https://github.com/open-mmlab/mmaction2
  - https://github.com/open-mmlab/mmrotate
+
+
+
+# Architectures
+
+
+## iOS app
+
+ - SwiftUI interface
+ - CoreML models - exported by MMDeploy to ONNX Runtime
+ - On device labeling generates a request to upload a screenshot of page to the learning service server
